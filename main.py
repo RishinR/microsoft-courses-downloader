@@ -33,26 +33,28 @@ DEFAULT_HEADERS = {
 PAGE_TITLE_IGNORE = ("Knowledge check", "Module assessment", "Exercise - ")
 
 HTML_STYLES = """
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-    h1 { color: #0078d4; border-bottom: 2px solid #0078d4; padding-bottom: 10px; }
-    h2 { color: #333; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-top: 0px; margin-bottom: 0px; }
+    :root { color-scheme: dark; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #0f172a; color: #e5e7eb; }
+    a { color: #7dd3fc; }
+    h1 { color: #93c5fd; border-bottom: 2px solid #2563eb; padding-bottom: 10px; }
+    h2 { color: #f3f4f6; border-bottom: 1px solid #334155; padding-bottom: 8px; margin-top: 0px; margin-bottom: 0px; }
     .section { margin-bottom: 40px; }
-    .section-header { background: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
-    .section-header a { color: #0078d4; text-decoration: none; }
+    .section-header { background: #111827; padding: 15px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #334155; }
+    .section-header a { color: #7dd3fc; text-decoration: none; }
     .section-header a:hover { text-decoration: underline; }
     img { max-width: 100%; height: auto; }
-    pre { background: #f4f4f4; padding: 15px; overflow-x: auto; border-radius: 5px; }
-    code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+    pre { background: #111827; color: #e5e7eb; padding: 15px; overflow-x: auto; border-radius: 5px; border: 1px solid #334155; }
+    code { background: #1e293b; color: #e5e7eb; padding: 2px 5px; border-radius: 3px; }
     table { border-collapse: collapse; width: 100%; margin: 15px 0; }
-    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-    th { background: #f5f5f5; }
-    .NOTE, .TIP, .IMPORTANT { padding: 12px 15px; margin: 15px 0; border-radius: 5px; border-left: 4px solid; }
-    .IMPORTANT { background-color: #e7f3ff; border-color: #0078d4; }
-    .IMPORTANT > p:first-child { font-weight: bold; color: #0078d4; margin-top: 0; }
-    .TIP { background-color: #e8f5e9; border-color: #4caf50; }
-    .TIP > p:first-child { font-weight: bold; color: #2e7d32; margin-top: 0; }
-    .NOTE { background-color: #f3e5f5; border-color: #9c27b0; }
-    .NOTE > p:first-child { font-weight: bold; color: #7b1fa2; margin-top: 0; }
+    th, td { border: 1px solid #334155; padding: 8px; text-align: left; }
+    th { background: #1e293b; }
+    .NOTE, .TIP, .IMPORTANT { padding: 12px 15px; margin: 15px 0; border-radius: 5px; border-left: 4px solid; background: #111827; }
+    .IMPORTANT { border-color: #38bdf8; }
+    .IMPORTANT > p:first-child { font-weight: bold; color: #93c5fd; margin-top: 0; }
+    .TIP { border-color: #4ade80; }
+    .TIP > p:first-child { font-weight: bold; color: #86efac; margin-top: 0; }
+    .NOTE { border-color: #c084fc; }
+    .NOTE > p:first-child { font-weight: bold; color: #d8b4fe; margin-top: 0; }
 """
 
 
